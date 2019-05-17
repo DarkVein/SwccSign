@@ -1,0 +1,37 @@
+<link rel="stylesheet" type="text/css" href="display.css">
+<head>
+<title>Live Demo</title>
+</head>
+<html>
+<body>
+<style>
+label {
+cursor: pointer;
+}
+</style>
+
+<a OnClick="window.close()"><div id="Live"><label>The Live Demo should pop up shortly. If it doesn't pop up in 5 seconds click on this message (Closes the live demo).</label></a></div>
+
+<script>
+
+var test = location.toString();
+var ss = test.split("@");
+var size = test.replace("file:///F:/Project/Php2.7.5/LiveDemo.html",'');
+var finalsize = size.split("?");
+var format = finalsize[1].split("@");
+var ImageSize = format[0];
+var FontPosition = ss[3];
+var FontSize = ss[1];
+var FontColor = ss[2];
+var Caption = ss[4].replace(/%20/g, ' ');
+var Source = ss[5];
+
+var Live = document.getElementById("Live");
+Live.style.fontSize = FontSize+'';
+Live.style.color = FontColor+'';
+Live.innerHTML = "<div class='container'><img src="+Source+" style="+ImageSize+"/><div class="+FontPosition+">" +Caption+"</div></div>";
+</script>
+</body>
+
+
+</html>

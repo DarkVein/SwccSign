@@ -1,0 +1,512 @@
+<html>
+<title>Advertisement</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div class="swcclogo fade"></div>
+<div class="chrome">
+<label>Made For</label>
+</div>
+<div id="version">Version 3.01.1, Eian / Laura / Morgan </div>
+<div class="logo fade"/></div>
+<div class="tab">
+<button class="tablinks" onclick="fade(event, 'UploadForm'); Open();" data-toggle="tooltip" title="Upload Media Files To The Database"><strong>Upload</strong></button>
+<button class="tablinks" onclick="openInNewTab('http://localhost/Php/Display.php?img=1');" data-toggle="tooltip" title="Click this to display the final program."><b>Display Webpage</b></button>
+<script>
+  function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+	}
+</script>
+<button class="tablinks" onclick="window.location.href='delete.php'" data-toggle="tooltip" title="Delete entries page"><b>Preview Images And Captions</b></button>
+<button class="tablinks" onclick="fade(event, 'Support'); Exit();" data-toggle="tooltip" title="Support"><b>Support and Commonly Asked Questions</b></button>  
+<button class="tablinks" onclick="fade(event, 'AboutUs'); Exit();" data-toggle="tooltip" title="Meet the team"><b>About Us</b></button>
+<div id="Icons">
+<label>Live Demo </label>
+<img src="Images/settings.png" onClick="Open()" height="40px" width="40px" data-toggle="tooltip" title="Show The Live Demo Window."/>
+</div>
+</div>
+<body>
+
+<!----SUPPORT---->
+<div id="Support" class="tabcontent">
+<h1>Commonly Asked Questions</h1>
+<h2>Can I Upload Video?</h2>
+<label>As of right now we only support .MOV, .MP4, and .WEBM file extension video files. We are working on a way to bring URL's (RSS feed or embedded videos) into the equation but it has not been implemented yet.</label>
+
+<h2><li>What do I input into the Image Size text field?</li></h2>
+<label>Although the use of our datalist/dropdown menu was helpful to our users, we decided to scrap it to include the option of a more precise Image Size. The Image Size text field is designed
+to use actual HTML code to set the height and length of an image. Common input formats include (Where # is the value you wish to input): 
+<li>width:#px;height:#px;</li>
+<li>width="#px";height="#px";</li>
+<li>width:#%;height:#%;</li>
+<li>width="#%";height="#%";</li>
+<li>width:1.3em;height:0.3em;</li>
+<label>Please note that if you wish to use two inputs (i.e. Height and Width) to define the size of your image, you cannot use spaces.</label>
+<li><strike>width:#px; height:#px;</strike> Will not work as intended.</li>
+You can also Input as if the image was a style (through the use of HTML code style="Image Size text field input" 
+however it is not recommended to do so, and use at your own risk.</label>
+<h1>First Time Users (Read Me)</h1>
+<h2>Getting Started</h2>
+<label><b>Live Demo</b></label>
+<label>
+
+<img src="Images/LiveDemo.png" class="right"/>
+
+<div class="front">
+The <img src="Images/collapse.png" height="20px" width="20px" data-toggle="tooltip" title="Collapse Live Demo Window Down." /> will toggle the visibility of the contents in the live demo window.
+<br></br>
+The fullscreen button <img src="Images/fullscreen.png" height="20px" width="20px" data-toggle="tooltip" title="Live Preview (This is what everyone actually will see)" />  
+<br></br>
+Exit <img src="Images/exit.png" height="20px" width="20px" data-toggle="tooltip" title="Exit Live Demo"/> button to close out of the live demo window.
+<br></br>
+<img src="Images/settings.png" height="40px" width="40px" data-toggle="tooltip" title="Show The Live Demo Window."/> (Positioned at the top of the page, under the <b>Upload</b> Button) will make the live demo window reappear.
+</label>
+<br></br><br></br>
+<label><b>Uploading your first Image</b></label>
+<br></br>
+To upload your image you have to get your image saved to the right file then make sure the MP4 <br> switch is switched off. Select the media using the select media button that says Click Or Drag Image To Upload. Click that and <br> then find your image.
+Once you have clicked your image hit the open button.
+<br>Next you want to use the Interval slide to set how long the image is going to be on screen before it switches to the next image.
+<br>To set the image size refer to the commonly asked questions for help.
+<br>To put an image caption click in the image caption dialog box and type what you want as your caption.
+<br>To set the caption size use the drag handle for caption size and set it to what you want.
+<br>To set the caption color click the box labeled caption color it will open another dialog box use this to pick the correct shade and color you want then hit ok.
+<br>For the caption position click the drop down button and choose where you want the caption.
+<br>Hit submit to submit it.
+<br></br>
+<label><b>Uploading your first Video</b></label>
+<br></br>
+<br>To upload a video make sure the video switch is switched to on then hit ok on the pop up that comes up.
+<br>Select your meida the same way you would for a picture.
+<br>Set the interval to the length of your video by sliding the interval slide bar.
+<br>Hit submit to submit it.
+<br></br>
+<label><b>Deleting Media</b></label>
+<br></br>
+<br> Go to the preview images and captions page.
+<br> You can only delete one at a time.
+<br> To delete an image you click the check box for that image then scroll down to the delete image button.
+<br> Hit the delete image button then refresh the page.
+<br></br>
+
+</div>
+</div>
+
+
+<!----ABOUT US---->
+<div id="AboutUs" class="tabcontent">
+<h1>Meet The Team</h1>
+
+<div class="container">
+<div class="right">
+<div class="card">
+<div class="fadeout" id="EianSlide" onclick="Eian();" data-toggle="tooltip" title="Eian" style="display: none;">
+<p>
+<br></br>
+My name is <b>Eian Barnett</b>.
+<br></br>
+I am from Creston, Iowa. While attending <b>SWCC</b> (August 2015 to June 2019), 
+I was listed in the President's List and majored in <b>Information Technology Systems Networking</b>. I plan on continuing on my education to a 4 year institution for computer science. 
+I decided to assist in this project to help me better understand computer programming, design, and computer structure.
+I am always excited to learn more about computers and how they operate, especially in the field of programming, it has been a passion of mine for a very long time and I hope I can make a career out of it.
+</p>
+</div>
+<div class="eian" onclick="Eian();" data-toggle="tooltip" title="Click To Read More About Eian"></div>
+<div class="ccontainer">
+<h4><b>Eian Barnett</b></h4>
+<li>Chief HTML Programmer</li>
+<li>Chief Java Script Programmer</li>
+<li>Chief Php Programmer</li>
+<li>Css Programmer</li>
+<li>Back End Developer</li>
+<li>Front End Developer</li>
+<li>Performance Optimization Manager</li>
+</div>
+</div>
+</div>
+
+<div class="left">
+<div class="card">
+<div class="fadeout" id="LauraSlide" onclick="laura();" data-toggle="tooltip" title="Laura" style="display: none;">
+<p>
+<br></br>
+My name is <b>Laura Fulz</b>.
+<br></br>
+I am originally from Corning, Iowa. While attending <b>SWCC</b> from June 2015 to June 2018 I obtained a double major in both <b>Information Technology Systems Networking</b>
+and Management Information Systems. My future plans are to pursue a government job within the IT field. 
+I have chosen this path and career because I am a Veteran, and during my 11 years of active duty in the United States Marine Corps, my job was Communications. 
+I look forward to my future within this field and learned a great deal from my experience
+here at SWCC and during this project. 
+</p>
+</div>
+<div class="laura" onclick="laura();" data-toggle="tooltip" title="Click To Read More About Laura"></div>
+<div class="ccontainer">
+<h4><b>Laura Fulz</b></h4>
+<li>Project Manager</li>
+</div>
+</div>
+</div>
+
+<div class="morgancenter">
+<div class="card">
+<div class="fadeout" id="MorganSlide" onclick="morgan();" data-toggle="tooltip" title="Morgan" style="display: none;">
+<p>
+<br></br>
+My name is <b>Morgan Spurrier</b>.
+<br></br>
+I am from Corning, Iowa. On my last year of the ITSN program here at SWCC I helped develop this project. I was on the President's list while attending SWCC.
+</p>
+</div>
+<div class="Morgan" onclick="morgan();" data-toggle="tooltip" title="Click To Read More About Morgan"></div>
+<div class="ccontainer">
+<h2><b>Morgan Spurrier</b></h2>
+<li>Database Manager</li>
+<li>Testing Manager</li>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="UploadForm" class="tabcontent">
+<div class="right">
+    <link rel="stylesheet" type="text/css" href="Scrolling.css" />
+	<script src="Scroller.js"></script>
+		<section class="rw-wrapper">
+			<h2 class="rw-sentence">
+				<span>Support for</span>
+				<div class="rw-words rw-words-1">
+					<span>.GIF</span>
+					<span>.MOV</span>
+					<span>.PNG</span>
+					<span>.JPG</span>
+					<span>.MP4</span>
+					<span>.WEBM</span>
+			</div>
+		</h2>
+</section>
+</div>
+<div class="box">
+<h1>Register Media</h1>
+<table>
+<form action="index.php" method="post" enctype="multipart/form-data">
+<tr>
+<td>
+<label for="switch">Video </label>
+</td>
+<td>
+<label class="switch">
+  <input type="checkbox" onclick="Hide(); Exit();">
+  <span class="slide round"></span>
+</label>
+</tr>
+</td>
+<tr>
+<td>
+<label>Select Media</label>
+</td>
+<td>
+<input type="file" name="fileToUpload" id="fileToUpload" required />
+<button onclick="$('#fileToUpload').click()" data-toggle="tooltip" title="Upload Media">
+<span id="Uploadspan">
+	<label>Click Or Drag The Image To Upload</label>
+	</span>
+    <img src=""/>
+</div>
+</td>
+</tr>
+<tr>
+<td><label for="Intervals">Interval</label></td>
+<td>
+<div class="slidecontainer">
+<input type="range" name="Intervals" id="Slider" min="1" max="100" value="50" class="slider" data-toggle="tooltip" title="The time it takes to switch to the next slide. (Ideal for Video length). - In seconds." required>
+<p>Interval: <span id="Interv"></span>
+</div>
+</td>
+</tr>
+</table>
+<span id="video"></span>
+
+
+<table id="Source">
+
+<tr>
+<td><label>Image Size</label></td>
+<td>
+<div id="Source"><input type="text" name="ImageSize" id="ImageSize" placeholder="(width:1000px;height:1000px;)(width:100%;height:100%;)" data-toggle="tooltip" title="Image Size Dimensions as determined by user."></input>
+</div></td>
+</tr>
+
+<td><label for="Description">Image Caption</label></td>
+<td><input type="text" name="Description" id="text" size="64" placeholder="Computer Club Fundraiser 2/8/2018" data-toggle="tooltip" title="This is the text caption the program will display" /></tr>
+</tr>
+</tr>
+<tr>
+<td><label for="Size">Caption Size</label></td>
+<div class="slidecontainer">
+<td><input type="range" name="Size" min="1" max="100" value="50" class="slider" id="Size" data-toggle="tooltip" title="Caption text size in pixels" /><p>Font-Size: <span id="Output"></span></p></td>
+</div>
+</td>
+</tr>
+<td><label for="Color">Caption Color</label></td>
+<td><input type="color" name="Color" id="Color" data-toggle="tooltip" title="Color of caption text" br/></td>
+<br>
+</tr>
+<tr>
+<td><label>Caption Position</label></td>
+<td>
+<select name="Position" id="Position" oninput="SelectTrigger()">
+  <option value="top-left">Top-Left</option>
+  <option value="centered">Centered</option>
+  <option value="top-right">Top-Right</option>
+  <option value="bottom-left">Bottom-Left</option>
+  <option value="bottom-right">Bottom-Right</option> 
+</select>
+</td>
+<tr>
+</tr>
+</table>
+<input type="submit" value="Submit" name="submit" data-toggle="tooltip" title="Submit Inquiry">
+</form>
+</div>
+<br>
+
+<!---
+----------############# LIVE DEMO ################----------
+-->
+<div id="LiveDemoWindow">
+  <div id="LiveDemoHeader">
+  <div id="Icons">
+  Live Preview
+  <img src="Images/collapse.png" onClick="CollapseWindow();" height="20px" width="20px" data-toggle="tooltip" title="Collapse Live Demo Window Down." />
+  <img src="Images/fullscreen.png" onClick="openWin();" height="20px" width="20px" data-toggle="tooltip" title="Live Preview (This is what everyone actually will see)" />
+  <img src="Images/exit.png" onClick="Exit();" height="20px" width="20px" data-toggle="tooltip" title="Exit Live Demo"/>
+  </div>
+</div>
+  <div id="Collapseable">
+<div class="uploader">
+  <span id="DemoOutput"></span>
+    <span id="DemoImage"></span>
+  </div>
+</div>
+</div>
+</html>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+document.onselectstart = function() {
+return false;
+}
+
+var eian = document.getElementById("EianSlide");
+var Laura = document.getElementById("LauraSlide");
+var Morgan = document.getElementById("MorganSlide");
+
+function Eian() {
+eian.style.display = "block";
+if(eian.getAttribute("class") === "fadeout") {
+	eian.setAttribute("class","slide-left");
+} else {
+	eian.setAttribute("class","fadeout");
+}
+}
+
+function laura() {
+Laura.style.display = "block";
+if(Laura.getAttribute("class") === "fadeout") {
+	Laura.setAttribute("class","slide-left");
+} else {
+	Laura.setAttribute("class","fadeout");
+}
+}
+
+function morgan() {
+Morgan.style.display = "block";
+if(Morgan.getAttribute("class") === "fadeout") {
+	Morgan.setAttribute("class","slide-left");
+} else {
+	Morgan.setAttribute("class","fadeout");
+}
+}
+
+var Source;
+//This script allows the upload of an image and a preview of that image.
+var imageLoader = document.getElementById('fileToUpload');
+imageLoader.addEventListener('change', handleImage, false);
+
+function handleImage(e) {
+    var reader = new FileReader();
+	if(reader!=null) {
+    reader.onload = function (event) {
+		Source=event.target.result;
+        $('.uploader img').attr('src',event.target.result);
+    }
+    reader.readAsDataURL(e.target.files[0]);
+	}
+}
+
+var interval = document.getElementById("Slider");
+var displayed = document.getElementById("Interv");
+
+interval.oninput = function() {
+displayed.innerHTML = this.value;
+}
+
+var srch = document.getElementById("Source");
+var upload = document.getElementById("Uploadspan");
+
+function Hide() {
+if(srch.style.display === "none") {
+	srch.style.display = "block";
+	upload.innerHTML = "<label>Click Or Drag The Image File To Upload.</label>";
+	size.value = "";
+} else {
+    srch.style.display = "none";
+	alert("The video field only accepts .mov, .mp4, and .webm file formats. And is not available for the Live Demo.");
+	upload.innerHTML = "<label>Click Or Drag The Movie File To Upload.</label>";
+	size.value = "video";
+}
+}
+</script>
+<script>
+var myWindow;
+
+function openWin() {
+myWindow = window.open("LiveDemo.html?"+ImageSize+"@"+FontSize+"@"+FontColor+"@"+FontPosition+"@"+Caption+"@"+Source, "", 'fullscreen=yes');
+}
+
+var output = document.getElementById("Output");
+//Live Demo Command Divs
+var livedemo = document.getElementById("LiveDemoWindow");
+var otherdiv = document.getElementById("Collapseable");
+//Demo Preview Div
+var demoimage = document.getElementById("DemoImage");
+
+//Image Size
+var size = document.getElementById("ImageSize");
+//Position
+var position = document.getElementById("Position");
+//Color
+var color = document.getElementById("Color");
+//Text
+var text = document.getElementById("text");
+//we neeed the double declaration, 1 for live 1 for generic
+var slider = document.getElementById("Size");
+
+//Live Demo Scripts
+function CollapseWindow() {
+if(otherdiv.style.display === "none") {
+	otherdiv.style.display = "block";
+} else {
+    otherdiv.style.display = "none";
+}
+}
+
+function Open() {
+livedemo.style.display = "block";
+}
+
+function Exit() {
+livedemo.style.display = "none";
+}
+
+var ImageSize = size.value;
+var FontPosition = position.value;
+var FontColor = color.value;
+var FontSize = slider.value;
+var Caption = text.value;
+Update();
+window.setInterval(function(){
+  Update();
+}, 2500);
+
+function Update() {
+if(Source) {
+ demoimage.innerHTML = "<div class='container'><img src="+Source+" style="+ImageSize+"/>" + "<font size="+FontSize+"><font color="+FontColor+"><div class="+FontPosition+">" +Caption+"</font></font></div></div>";
+ }
+}
+
+text.oninput = function() {
+Caption = this.value;
+}
+//Image Size
+size.oninput = function() {
+ImageSize = this.value;
+}
+//Position
+position.oninput = function() {
+FontPosition = this.value;
+}
+//Color picker
+color.oninput = function() {
+  FontColor = this.value;
+}
+
+//Text size
+slider.oninput = function() {
+ output.innerHTML = this.value;
+ FontSize = this.value;
+}
+
+</script>
+
+<script>
+function fade(evt, action) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(action).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById(("LiveDemoWindow")));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById("LiveDemoHeader")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById("LiveDemoHeader").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>

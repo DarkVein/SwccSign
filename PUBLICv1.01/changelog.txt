@@ -1,0 +1,13 @@
+C:\xampp\htdocs\Php\thumbnails
+http://localhost/Php/thumbnails/
+
+Create Database signage;
+Create table signage.signs (
+Name varchar(255), 
+Description varchar(255), 
+Position varchar(255), 
+Color varchar(255),
+Size Integer(255),
+ImageSize varchar(255),
+Intervals Integer(255)
+);

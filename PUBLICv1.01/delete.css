@@ -1,0 +1,178 @@
+body {
+    background-image: url("Images/subtlebg.jpg");
+    background-attachment: fixed;
+	background-size: cover;
+    background-position: center; 
+}
+
+h1 {
+    color: #DF2D21;
+	font-size: 60px;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+	color: red;
+}
+
+label{
+    padding: 20x 11px;
+	font-size: 20px;
+    border: 2px;
+    border-radius: 1px;
+	color: red;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #DF2D21;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    width: 100%;
+    background-color: #DF2D21;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    width: 100%;
+    background-color: #DF2D21;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+}
+
+input[type=submit]:hover {
+    background-color: #DF5B21;
+}
+
+input[type=reset]:hover {
+    background-color: #DF5B21;
+}
+
+input[type=checkbox]:hover {
+    background-color: #DF5B21;
+}
+
+input[type=file]:hover {
+    background-color: #DF5B21;
+}
+
+.topright {
+position: absolute;
+top: 75px;
+right: 12px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: center;
+    border: 1px;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 20px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+div.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1.3s;
+    animation: fadeEffect 1.3s;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.version {
+  color: #ccc;
+  font-size: 12px;
+  position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.right {
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
